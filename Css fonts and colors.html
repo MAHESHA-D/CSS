@@ -1,0 +1,80 @@
+<!doctype html>
+<html> 
+    <head>
+        <title>
+CSS font style and colors
+        </title>
+    <style> 
+    p.italic{
+        font-style: italic;
+    }
+    p.normal{
+        font-style: normal;
+    }
+    p.oblique{
+        font-style: oblique;
+    }
+    p.weight{
+        font-weight: normal;
+    }
+    p.weight-bold{
+        font-weight: bold;
+    }
+    p.weight-light{
+        font-weight: lighter;
+    }
+    p.weight-high{
+        font-weight:900;
+    }
+    p.varient{
+        font-variant: normal;
+    }
+    p.small-caps{
+        font-variant: small-caps;
+    }
+    p.size{
+        font-size: 30px;
+    }
+    p.em{
+        font-size:3em;
+    }
+    .font{
+        text-align: center;
+        font-size: 20px;
+        font-family:"Times New Roman", serif, sans-serif;
+        background: lightblue;
+        width:250px;
+        margin:25px;
+        border:3px double green;
+    }
+
+    </style>
+    </head>
+    <body>
+        <h2> Font style</h2>
+        <p class="italic"> This paragraph is Italic</p>
+        <p class="normal"> This paragraph is Normal</p>
+        <p class="oblique"> This Paragraph is oblique</p><hr>
+
+        <h2>Font Weight </h2>
+        <p class="weight"> This font weight is normal/default font weight</p>
+        <p class="weight-bold"> This paragraph font is Bold </p>
+        <p class="weight-light"> This paragraph font is light weight</p>
+        <p class="weight-high"> This paragaraph is high font weight</p> <hr>
+
+        <h2> Font Varient </h2>
+        <p class="varient">The font-variant property specifies whether or not a text should be displayed in a small-caps font.</p>
+        <p class="small-caps">In a small-caps font, all lowercase letters are converted to uppercase letters.</p><hr>
+
+        <h2> Font Size</h2>
+        <p class="size"> The font-size property sets the size of the text. size 30px</p> 
+        <p class="em">1em is equal to the current font size. The default text size in browsers is 16px. 
+            So, the default size of 1em is 16px.(font size 3em)</p>  
+            <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p><hr>
+
+        <h2> Shorthand Font property </h2>
+
+<p class="font"> It is times new roman font</p> 
+
+    </body>
+    </html>

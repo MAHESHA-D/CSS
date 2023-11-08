@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Text and its properties
+        </title>
+        <style>
+           
+h3{
+    color:blue;/* text color*/
+    background-color: lightgray;/*background text color*/
+    text-align: center;
+}
+p.r{
+    text-align-last: center;/*it will align the text center*/
+}
+p.ex1 {
+            direction: rtl;/*rtl=right to left direcction*/
+            unicode-bidi: bidi-override; /* it will reverse like bidirection */
+    }
+img.a{
+vertical-align: baseline;
+}
+img.b{
+    vertical-align: text-top;
+}
+img.c{
+vertical-align: text-bottom;
+}
+img.d{
+    vertical-align: sub;
+}
+img.e{
+vertical-align: super;
+}
+p.over{
+    text-decoration-line: overline;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+    text-decoration-style: wavy;
+}
+p.line{
+    text-decoration-line: line-through;
+    
+    text-decoration-color: blue;
+    text-decoration-thickness: 1px;
+}
+p.under{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: green;
+    text-decoration-thickness: 2px;
+}
+p.both{
+    text-decoration: overline underline lightseagreen dotted 3px;
+                    /* decoration line    color          style  thickness */
+}
+p.upper{
+    text-transform: uppercase;
+}
+p.lower{
+    text-transform: lowercase;
+}
+p.capitalize{
+    text-transform: capitalize;
+}
+p.indent{
+    text-indent: 50px;
+}
+p.letter{
+    letter-spacing: 5px;
+}
+p.letter-spacing{
+    letter-spacing: -1px;
+}
+p.height{
+    line-height: 1.2;
+}
+p.line-height{
+    line-height: 0.5;
+}
+p.word{
+    word-spacing:20px;
+}
+p.white{
+    white-space:nowrap;
+    /* nowrap property text will never wrap to the next line.*/
+}
+p.shadow{
+    text-shadow: 1px 1px 3px red;
+}
+p.shadow2{
+    text-shadow: 2px 2px 5px red, 1px 1px 4px blue;
+}
+        </style>
+    </head>
+    <body>
+        <h3> This paragraph is blue text-color and lightgray background-color.</h3> <hr>
+
+<p> this is last line centerd text alignment</p>
+<p class="r">text-align property is set to "justify", 
+            each line is stretched so that every line has equal width, 
+            and the left and right margins are straight<br> 
+            (like in magazines and newspapers)</p> <hr>
+
+<h1>text-direction </h1>
+        <p>This is the default text direction.</p>
+      <p class="ex1">This is right-to-left text direction.</p> <hr>
+
+<p class="vl"> 
+    <h1>The vertical-align Property</h1>
+
+<h2>vertical-align: baseline (default):</h2>
+<p>An <img class="a" src="D:/color.png" width="12" height="10"> image with a default alignment.</p> 
+
+<h2>vertical-align: text-top:</h2>
+<p>An <img class="b" src="D:/color.png" width="12" height="10"> image with a text-top alignment.</p>
+
+<h2>vertical-align: text-bottom:</h2>
+<p>An <img class="c" src="D:/color.png" width="12" height="10"> image with a text-bottom alignment.</p>
+
+<h2>vertical-align: sub:</h2>
+<p>An <img class="d" src="D:/color.png" width="12" height="10"> image with a sub alignment.</p> 
+
+<h2>vertical-align: sup:</h2>
+<p>An <img class="e" src="D:/color.png" width="12" height="10"> image with a super alignment.</p>
+</p><hr>
+<h1> Text Decoration</h1>
+<p class="over">Overline text decoration</p>
+<p class="line">Line-through text decoration</p>
+<p class="under">Underline text decoration</p>
+<p class="both">Overline and underline text decoration.</p>
+<hr>
+<h1> Text tranformation</h1>
+
+<p class="upper">This text is transformed to uppercase.</p>
+<p class="lower">This text is transformed to lowercase.</p>
+<p class="capitalize">This text is capitalized.</p> <hr>
+
+<h1> Text Spacing </h1>
+<p class="indent"> The text-indent property is used to specify the indentation of the first line of a text </p> <br>
+
+<p class="letter">The letter-spacing property is used to specify the space between the characters in a text.
+    (text spacing=5px)</p> <br>
+
+<p class="letter-spacing">The letter-spacing property is used to specify the space between the characters in a text.
+    (text spacing= -1px)</p> <br>
+
+<p class="height"> The line-height property is used to specify the space between lines<br>
+    This is a paragraph with a bigger line-height.</p><br>
+
+<p class ="line-height">This is a paragraph with a smaller line-height<br>
+    This is a paragraph with a smaller line-height</p><br>
+
+<p class="word">The word-spacing property is used to specify the space between the words in a text. 
+    (each word has 20px space) </p><br>
+
+<p class="white">The white-space property specifies how white-space inside an element is handled. 
+    This is some text that will not wrap.
+    This is some text that will not wrap.
+    This is some text that will not wrap.</p><br> <hr>
+
+<h1> Text shadow</h1>
+<p class="shadow"> The text-shadow property adds shadow to text.</p>
+<p class="shadow2"> This is text shadow with blue and red coloured</p>
+</body>
+</html>
