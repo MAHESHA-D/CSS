@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+    <style>
+    table, th, td {
+  border: 1px double blue;
+
+  /* to collapse single border 
+  border-collapse: collapse;
+    border: 1px solid red; */
+}
+table{
+    width:50%;
+}
+/*it will make table hight 70px */
+th{ 
+    height:70px;
+    background-color: yellow;
+}
+/*vertical allignment */
+td{
+    height:30px;
+    vertical-align: bottom;
+} 
+/* It will 15px padding and left aligned  and bottom border red colored*/
+td,th{
+    padding:15px;
+    text-align: left;
+    border-bottom: 2px solid red;
+}
+/* if mouse hover the table it will change color */
+tr:hover{
+    background-color: aqua;
+}
+/* it will change background color of even tables light gray colored */
+tr:nth-child(even){
+    background-color: lightgray;
+}
+  </style>
+    </head>
+<body>
+        <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Location</th>
+        </tr>
+        <tr>
+          <td>Aaludra</td>
+          <td>123456</td>
+          <td>Coimbatore</td>
+        </tr>
+        <tr>
+          <td>Tata group</td>
+          <td>012345</td>
+          <td>Bangalore</td>
+        </tr>
+        <tr>
+            <td>IBM</td>
+            <td>854687</td>
+            <td>Chennai</td>
+          </tr>
+          <tr>
+            <td>Accenture</td>
+            <td>547989</td>
+            <td>Mumbai</td>
+          </tr>
+</table>
