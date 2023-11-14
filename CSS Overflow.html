@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> CSS Overflow </title>
+    <style>
+        body{
+            text-align: center;
+            background-color: lightgray;
+        }
+        h1{
+            text-shadow: 1px 1px 4px blue, 1px 1px 2px red;
+        }
+ p.visible{
+    width: 250px;
+    height: 80px;
+    overflow:visible;
+    border: 1px solid red;
+ }
+ p.hidden{
+    width: 250px;
+    height: 80px;
+    overflow:hidden;
+    border: 2px solid gray;
+ }
+  p.scroll{
+    width: 250px;
+    height: 80px;
+    overflow:scroll;
+    border: 2px solid blue;
+ } 
+ p.auto{
+    width: 250px;
+    height: 80px;
+    overflow:auto;
+    border: 2px solid green;
+ } 
+ p.overflow-x{
+    width: 250px;
+    height: 80px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border: 2px solid red;
+ } 
+ p.overflow-y{
+    width: 250px;
+    height: 80px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 2px solid tomato;
+ }
+    </style>
+</head>
+<body>
+   <h1> Overflow:visible</h1> 
+   <p>visible - Default. The overflow is not clipped. The content renders outside the element's box</p>
+   <p class="visible"> The overflow property specifies whether to clip the content or to add scrollbars 
+    when the content of an element is too big to fit in the specified area.
+    The overflow property only works for block elements with a specified height.</p> <hr>
+
+    <h1>Overflow:hidden</h1>
+    <p> hidden - The overflow is clipped, and the rest of the content will be invisible</p>
+    <p class="hidden"> The overflow property specifies whether to clip the content or to add scrollbars 
+        when the content of an element is too big to fit in the specified area.
+        The overflow property only works for block elements with a specified height.</p><hr>
+
+    <h1> Overflow:Scroll</h1>
+        <p> scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content</p>
+        <p class="scroll"> The overflow property specifies whether to clip the content or to add scrollbars 
+            when the content of an element is too big to fit in the specified area.
+            The overflow property only works for block elements with a specified height.</p><hr>
+
+        <h1> Overflow:Auto</h1>
+            <P> auto - Similar to scroll, but it adds scrollbars only when necessary</P>
+            <p class="auto"> The overflow property specifies whether to clip the content or to add scrollbars 
+                when the content of an element is too big to fit in the specified area.
+                The overflow property only works for block elements with a specified height.</p><hr>
+
+        <h1> Overflow-x (Horizontally)</h1>
+            <p> overflow-x specifies what to do with the left/right edges of the content.</p>
+            <p class="overflow-x"> The overflow property specifies whether to clip the content or to add scrollbars 
+                when the content of an element is too big to fit in the specified area.
+                The overflow property only works for block elements with a specified height.</p><hr>
+                
+             <h1>Overflow-y (Vertically) </h1>
+                <p> overflow-y specifies what to do with the top/bottom edges of the content.</p>
+                <p class="overflow-y"> The overflow property specifies whether to clip the content or to add scrollbars 
+                    when the content of an element is too big to fit in the specified area.
+                    The overflow property only works for block elements with a specified height.</p>
+</body>
+</html>
