@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+p.static{
+position: static;
+border:3px solid green;
+}
+
+div.relative{
+    Position:relative;
+    left:45px;
+    border:2px solid blue;
+} 
+div.fixed{
+    position:fixed;
+    bottom:50%;
+    right:10%;
+    width:300px;
+    border: 3px double gray;
+}
+
+div.absolute {
+  position: absolute;
+  top: 355px;;
+  left: 40px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  border: 3px solid lightgreen;
+}
+div.sticky{
+    position: sticky;
+    background-color: lightgray;
+    border:3px double blue;
+}
+div.container{
+    position: relative;
+}
+div.right{
+    position: absolute;
+    top:8px;
+    left:16px;
+    font-size: medium;
+    color:blue;
+}
+img{
+    width:800px;
+    height:auto;
+    opacity: 0.5;
+}
+        </style>
+    </head>
+<body>
+<h1> Position: Static</h1>
+<p class="static">
+    This paragraph element Position: Static</p><hr>
+
+<h1> Position: Relative</h1>
+<div class="relative">
+    This div element Position: relative
+</div><hr>
+
+<h1> Position:Fixed</h1>
+<div class="fixed"> This  div element position: Fixed</div><hr>
+
+<h1> Position:Absolute</h1>
+<div class="absolute">This Div Element position: absolute</div><br>
+<p> The absolute position can overlap on elements</p><hr>
+
+<h1> Position: Sticky</h1>
+<div class="sticky"> This Div Element position: Sticky</div>
+<p>The Sticky position element positioned based on user scroll.</p> <hr>
+
+<div class="container">
+    <img src="D:/pixel.jpg">IMAGE</img>
+    <div class="right"> Top Left </div>
+</div>
+</body>
+</html>
