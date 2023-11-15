@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dispaly inline-block</title>
+<style>
+    p.inline{
+        display: inline;
+        padding:5px;
+        border:2px solid red;
+        background-color: lightgray;
+    }
+p.inline-block{
+    display:inline-block;
+    width: 90px;
+    height:40px;
+    padding:10px;
+    font-weight:bold;
+    background-color: yellowgreen;
+    border:2px solid tomato;
+}
+p.block{
+    display: block;
+    width: 100px;
+    height:20px;
+    padding:5px;
+    border:3px double;
+    background-color: seagreen;
+}
+img{
+    display:inline-block;
+    width: 400px;
+    border:3px double blueviolet;
+}
+</style>
+</head>
+<body>
+    <h2> Dispaly:inline </h2>
+   <div> The <p class="inline">display: inline</p> does not allows to set a width and height on the element.</div><hr>
+<h2> Dispaly:inline-block</h2>
+<div>Compared to <p class="inline-block">display: inline</p>the major difference is that 
+<p class="inline-block">display: inline-block</p> allows to set a width and height on the element.</div><hr>
+<h2>Display:block</h2>
+<div>The <p class="block">display: block </p> will add a line-break after the element, 
+    so the element can sit next line of the elements.</div><hr>
+    <img src="D:/pixel.jpg"> Image with inline-block property</img>
+</body>
+</html>
