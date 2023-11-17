@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Align properties </title>
+    <style>
+        h1, h2{
+            text-shadow: 1px 1px 3px blue, 2px 2px 3px tomato;
+        }
+.C1{
+    margin:auto;
+    width: 60%;
+    padding:20px;
+    border: 2px solid green;
+}
+.C2{
+    text-align:center;
+    margin:auto;
+    width:50%;
+    border: 2px solid gray;
+}
+img{
+    margin:auto;
+    display: block;
+    width: 100px;
+}
+.C3{
+    position: absolute;
+    right: 0px;
+  width: 300px;
+  border: 3px double greenyellow;
+  padding: 10px;
+}
+.C4{
+    float: right;
+  width: 300px;
+  border: 3px dashed red;
+  padding: 10px;
+}
+.C5{
+    padding: 70px 0;
+    width:50%;
+    border: 3px double green;
+}
+.C6{
+    
+  padding: 70px 0;
+  border: 3px solid green;
+  text-align: center;}
+
+.C7{
+    line-height: 200px;
+    text-align: center; 
+    border: 3px dotted blue;
+}
+.C8{
+    margin: 50px;
+  position: absolute;
+  top: 230%;
+  left: 50%;
+  padding:50px;
+ border: 2px solid blueviolet;
+  transform: translate(-50%, -50%);
+}
+.C9{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+    </style>
+</head>
+<body>
+    <h1>CSS align properties</h1>
+    <h2> Center aligned element</h2>
+    <div class="C1">Division Element is Center aligned</div> <hr>
+    
+    <h2>Center aligned text</h2>
+    <div class="C2">This text is center aligned</div><hr>
+
+    <h2> Center an Image</h2>
+    <img src="D:/color.png"> </img> <hr>
+    
+    <h2>Left to Right align using Position</h2>
+    <div class="C3">
+     Absolute positioned elements are removed from the normal flow, and can overlap elements.</div><br><br>
+
+     <br><h2> Left to Right using Float </h2>
+     <div class="C4"> Right align element with using float property</div> <br>
+
+     <h2> Center Vertically using Padding</h2>
+     <div class="C5"> Text vertically centered.</div>
+     
+     <h2>Center vertically and horizontally </h2>
+     <div class="C6"> Text Vertically and horizontally aligned center </div>
+     
+    <h2> Center vertically using line height</h2>
+    <div class="C7">Text vertically aligned using line height</div>
+
+    <h2>Center Vertically using position & transform</h2><br><br>
+    <div class="C8"> Text aligned Center Vertically - Using position & transform </div>
+
+    <h2> Center vertically using flexbox</h2>
+    <div Class="C9"> Text aligned vertically using flexbox</div>
+</body>
+</html>

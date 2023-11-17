@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Elements</title>
+    <style>
+p.letter::first-letter {
+  color: red;
+  font-size: 30px;
+}
+p.line::first-line {
+  color: red;
+  font-variant: small-caps;
+}
+p.b::before{
+content:url("D:/hi.gif");
+color:blueviolet;
+}
+p.a::after{
+    content: url("D:/hi.gif");
+}
+::marker{
+    color:blue;
+}
+p.s::selection{
+color:red;
+background-color: yellowgreen;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> Pseudo Elements</h1>
+    <h2>::First-letter Pseudo Element</h2>
+    <p class="letter">The ::first-letter pseudo-element is used to add a special style to the first letter of a text</p>
+    
+    <hr><h2>::First-line Pseudo Element</h2>
+    <p class="line"> The :: first-line pseudo-element i used to add a specila style to the first line of a text</p><hr>
+
+    <h2>::Before Pseudo Elements</h2>
+    <p class="b" style="font-size:25px;">This is ::before Pseudo Element</p><hr>
+
+    <h2>::After Pseudo Elements</h2>
+    <p class="a" style="font-size:20px;"> This is ::after Pseudo Element</p><hr>
+
+    <h2>::Marker Pseudo Elements</h2>
+    <ul>
+    <li>Orange</li>
+    <li>Mango</li>
+    <li>Kiwi</li>
+    <li>Guava</li>    </ul>
+    <ol>
+        <li>Car</li>
+        <li>Bike</li>
+        <li>Cycle</li>  
+    </ol>
+
+    <h2>::Selection Pseudo Element</h2><hr>
+    <p> Select the text or word</p>
+    <p class="s">The ::selection pseudo-element matches the portion of an element that is selected by a user.</p>
+    
+    </body>
+</html>

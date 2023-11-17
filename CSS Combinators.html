@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combinators</title>
+    <style>
+div p{
+  color:red;  
+}
+div.child>p{
+    color:blue;
+}
+div.adjacent+p{
+    background-color:gray;
+}
+div.general~p{
+    background-color: seagreen;
+}
+    </style>
+</head>
+<body>
+<center><h1> Combinators</h1></center>
+<h2> Descendent selector </h2>
+<div> <p> Division paragraph</p>
+<p> Division Paragraph</p></div>
+<p> Paragraph</p><hr>
+
+<h2>Child Combinator (>) </h2>
+<div class ="child"> <p> Division paragraph</p>
+    <p> Division Paragraph</p>
+<section><p>Section paragraph</p></section>
+<p> Division Paragraph</p>
+</div><hr>
+
+<h2>Adjacent sibling combinator (+) </h2>
+<div class="adjacent"> <p> Division paragraph</p>
+    <p> Division Paragraph</p></div>
+    <p>Div after para 1</p>
+    <p> Div after para 2</p> <hr>
+
+    <h2> General sibling Combinator</h2>
+    <div class="general"> <p> Division paragraph</p>
+        <p> Division Paragraph</p></div>
+        <p>Div after para 1</p>
+        <p> Div after para 2</p> <hr>
+</body>
+</html>
