@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition</title>
+    <style>
+div {
+  width: 100px;
+  height: 100px;
+  background:lightblue;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px blue;
+  transition: width 3s ;
+}
+#linear {transition-timing-function: linear;}
+#ease {transition-timing-function: ease;}
+#ease-in {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#ease-in-out{transition-timing-function: ease-in-out;}
+
+div:hover {
+  width: 400px;
+  font-size:30px;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">CSS Transition</h1>
+<h2>Linear transition effect</h2>
+<h3>Move mouse hover on division elements to see the effect</h3>
+<p>linear - specifies a transition effect with the same speed from start to end</p>
+<div id="linear">linear</div><hr>
+
+<h2>ease transition effect</h2>
+<p>ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)</p>
+<div id="ease">ease</div><hr>
+
+<h2>ease-in transition effect</h2>
+<p>ease-in - specifies a transition effect with a slow start</p>
+<div id="ease-in">ease-in</div><hr>
+
+<h2>ease-out transition effect</h2>
+<p>ease-out - specifies a transition effect with a slow end</p>
+<div id="ease-out">ease-out</div><hr>
+
+<h2>ease-in-out transition effect</h2>
+<p>ease-in-out - specifies a transition effect with a slow start and end</p>
+<div id="ease-in-out">ease-in-out</div><hr>
+</body>
+</html>

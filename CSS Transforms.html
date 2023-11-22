@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transform</title>
+    <style>
+.translate{
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+    transform: translate(40px,20px);
+}
+.rotate {
+    width: 200px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid black;
+  transform: rotate(10deg);
+}
+.scale{
+    margin-left: 90px;
+    width: 250px;
+  height: 75px;
+  background-color: lightgray;
+  border: 1px solid blue;
+  transform: scale(2,1.5);
+}
+.scalex{
+    margin: 100px;
+  width: 180px;
+  height: 100px;
+  background-color: lightcoral;
+  border: 1px solid black;
+  transform: scaleX(2);
+}
+.scaley{
+  margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleY(2);
+}
+.skewx{  
+    width: 300px;
+  height: 100px;
+  background-color: lightgreen;
+  border: 1px solid black;
+  transform: skewX(20deg);
+}
+.skewy{
+    width: 300px;
+  height: 100px;
+  background-color: lightgray;
+  border: 1px solid black;
+  transform: skewY(10deg);
+}
+.skew{
+    width: 300px;
+  height: 100px;
+  background-color: lightskyblue;
+  border: 1px solid black;
+  transform: skew(20deg,10deg);
+}
+
+.matrix{
+    width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+div#myDiv2 {
+    width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+/*------------3D transform-----------*/
+.rotatex {
+  width: 250px;
+  height: 100px;
+  background-color: lightgreen;
+  border: 1px solid black;
+  transform: rotateX(150deg);
+}
+.rotatey{
+  width: 250px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid black;
+  transform: rotateY(150deg);
+}
+.rotatez{
+    margin:70px;
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: rotateZ(90deg);
+}
+    </style>
+</head>
+<body>
+   <h1>2D Transform</h1> 
+   <h2>Translate() method</h2>
+   <div class="translate">The translate() method moves an element from its current position 
+    (according to the parameters given for the X-axis and the Y-axis).</div> 
+
+    <h2>Rotate() method</h2>
+    <div class="rotate">
+        The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.</div>
+
+    <h2>Scale() method</h2>
+    <div class="scale">The scale() method increases or decreases the size of an element 
+        (according to the parameters given for the width and height).</div>
+
+    <h2>ScaleX() method</h2>
+    <div class="scalex">The scaleX() method increases or decreases the width of an element.</div>
+
+    <h2>ScaleY() method</h2>
+    <div class="scaley">The scaleY() method increases or decreases the height of an element.</div>
+
+    <h2>SkewX() method</h2>
+    <div class="skewx">The skewX() method skews an element along the X-axis by the given angle.</div>
+
+    <h2>SkewY() Method</h2>
+    <div class="skewy">The skewY() method skews an element along the Y-axis by the given angle.</div>
+
+    <h2>Skew() Method</h2>
+    <div class="skew">The skew() method skews an element along the X and Y-axis by the given angles.</div>
+
+    <h2>Matrix() Method</h2>
+    <div class="matrix">The matrix() method combines all the 2D transform methods into one.</div>
+    <div id="myDiv2">
+    Another use of the matrix() method.
+    </div><br><hr>
+
+  <h1>3D Transform</h1>
+<h2>RotateX() method</h2>
+<p>Rotated x direction 150 degree</p>
+<div class="rotatex">The rotateX() method rotates an element around its X-axis at a given degree</div>
+
+<h2>RotateY() method</h2>
+<p>Rotated Y direction 150 degree</p>
+<div class="rotatey">The rotateY() method rotates an element around its Y-axis at a given degree</div>
+
+<h2>RotateZ() method</h2>
+<p>Rotated Z direction 90 degree</p>
+<div class="rotatez">The rotateZ() method rotates an element around its Z-axis at a given degree</div>
+</body>
+</html>
