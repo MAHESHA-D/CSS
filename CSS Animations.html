@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animations</title>
+    <style>
+        h1{
+         text-shadow: 2px 1px 3px blue;
+        }
+        .color {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  border-radius: 10px;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {background-color:pink;}
+  to {background-color: tomato;}
+}
+.moving {
+  width: 75px;
+  height: 75px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  animation-name: direction;
+  animation-duration: 4s;
+}
+@keyframes direction {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+.delay {
+  width: 75px;
+  height: 75px;
+  background-color: gray;
+  border-radius: 10px;
+  position: relative;
+  animation-name: delay;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes delay {
+  0%   {background-color:gray; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:gray; left:0px; top:0px;}
+}
+.iteration {
+  width: 75px;
+  height: 75px;
+  background-color: lightblue;
+  border-radius: 10px;
+  position: relative;
+  animation-name: iteration;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+@keyframes iteration  {
+    from {left: 0px;}
+  to {left: 300px;}
+}
+.direction {
+  width: 75px;
+  height: 75px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  position: relative;
+  animation-name: direction;
+  animation-duration: 4s;
+  animation-direction: reverse ; 
+  animation-iteration-count: 2; 
+}
+@keyframes direction {
+  0%   {background-color:lightgreen; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:lightgreen; left:0px; top:0px;}
+}
+.time{
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  border-radius: 10px;
+  font-weight: bold;
+  position: relative;
+  animation: time 5s 3;
+ animation-timing-function: linear;
+}
+@keyframes time {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+.fill {
+  width: 80px;
+  height: 80px;
+  background:lightblue;
+  border-radius: 10px;
+  position: relative;
+  animation-name: fill-mode;
+  animation-duration: 3s;  
+  animation-fill-mode: backwards;
+}
+@keyframes fill-mode{
+  from {top: 0px;}
+  to {top: 150px; background-color: blue;}
+}
+
+.animation {
+  width: 65px;
+  height: 65px;
+  background-color: red;
+  border-radius: 15px;
+  position: relative;
+  animation: shorthand 5s linear 2s 5 alternate;
+}
+
+@keyframes shorthand {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Animation</h1>
+    <h3>Changing color</h3>
+    <div class="color"></div>
+
+    <h3>Moving directions</h3>
+    <p>Moving one place to another and changing color</p>
+    <div class="moving"></div><br><br><br>
+
+    <h3>Delay an animation</h3>
+    <p>Delaying for 2sec and it will change direction</p>
+    <div class="delay"></div><br><br><br><br>
+
+    <h3>Animation-iteration</h3>
+    <p>Iteration moving</p>
+    <div class="iteration"></div>
+
+    <h3>Animation-direction</h3>
+    <p>Moving reverse direction</p>
+    <div class="direction"></div><br><br><br>
+
+    <h3>Animation-timing-function</h3>
+    <P> The animation-timing-function property specifies the speed curve of the animation.</P>
+    <div class="time"></div><br>
+
+    <h3>Animation-fill-mode</h3>
+    <p>The animation-fill-mode property specifies a style for the target element when the animation is not playing 
+        (before it starts, after it ends, or both).</p>
+    <div class="fill"></div><br><br><br>    
+
+    <br><h3>Animation Shorthand property</h3>
+    <div class="animation"></div>
+</body>
+</html>
