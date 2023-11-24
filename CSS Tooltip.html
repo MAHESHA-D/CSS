@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS tooltip</title>
+    <style>
+.tooltip{
+    position:relative;
+    display:inline-block;
+    border-bottom: 1px dotted black;
+    font-size: 25px;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    background-color:lightgray;
+    color:black;
+    width:120px;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+   /*right tooltip
+    top: -5px;
+  left: 105%; */
+
+  /*left tooltip 
+  top: -5px;
+  right: 105%;*/
+
+  /*top tooltip */
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+
+  /*bottom tooltip 
+  width:100px;
+  top:100%;
+  left:50%;
+  margin-left: -50px;*/
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip2 .tooltiptext2::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+.tooltip3 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+  opacity: 1;
+}
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1>CSS Tooltip</h1><br>
+    <div class="tooltip"> Hover me
+        <span class="tooltiptext">Iam Tooltip</span>
+    </div><hr>
+    <h2>Tooltip Arrows</h2><br>
+    <div class="tooltip2">Hover me
+        <span class="tooltiptext2">Iam Tooltip arrow</span>
+    </div><hr>
+    <h2>Fade in Tooltip </h2><br>
+    <div class="tooltip3">Hover me
+        <span class="tooltiptext3">Fade in tooltip</span>
+    </div><hr>
+</body>
+</html>
